@@ -31,6 +31,9 @@ Este tutorial ensina passo a passo a criação de um Ambiente de desenvolvimento
 
 .. code:: python
 
+  from _spy.vitollino.main import Cena, STYLE
+  """Importa componentes Cena e STYLE do Vitollino"""
+
   class Kwarwp():
       """ Jogo para ensino de programação.
 
@@ -59,6 +62,12 @@ Este tutorial ensina passo a passo a criação de um Ambiente de desenvolvimento
           sol = self.v.a(self.SOL, w=60, h=60, x=0, y=40, cena=cena)
           cena.vai()
           return cena
+
+  if __name__ == "__main__":
+    from _spy.vitollino.main import Jogo
+    STYLE["width"]=600
+    STYLE["height"]=500
+    Kwarwp(Jogo)  
 
 Tela Gerada
 ------------
